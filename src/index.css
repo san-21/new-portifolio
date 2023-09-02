@@ -1,0 +1,113 @@
+html,
+body {
+  background-color: #1f1f1f;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+.socialbuttons:hover * {
+  cursor: pointer;
+  color: #28e98c;
+  box-shadow: none;
+}
+.socialbuttons:hover {
+  border: 2px solid #28e98c;
+}
+.socialbuttons:hover * {
+  cursor: pointer;
+  color: #28e98c;
+  box-shadow: none;
+}
+.rightnav a :hover * {
+  cursor: pointer;
+  color: #28e98c;
+  box-shadow: none;
+}
+.drawertoggle:hover * {
+  cursor: pointer;
+  color: #28e98c;
+  box-shadow: none;
+}
+.drawertoggle:hover {
+  border: 1px solid #20ba70;
+}
+.drawermenu:hover .buttonicon {
+  color: #20ba70;
+}
+.drawermenu:hover .text {
+  color: #ffffff;
+  font-weight: 600;
+}
+.drawersocialicon:hover {
+  color: #20ba70;
+}
+.skills {
+  background: linear-gradient(to left, #5e35b1, #28e98c) !important;
+}
+.projectoverlay {
+  background: linear-gradient(to bottom, #a9f6d1, #188c54) !important;
+}
+.project {
+  position: relative;
+  cursor: pointer;
+  width: 90%;
+}
+.miniproject {
+  position: relative;
+  cursor: pointer;
+  width: 99%;
+}
+.bottomoverlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease-in;
+}
+.miniproject:hover .bottomoverlay {
+  height: 50%;
+  margin: 10;
+}
+.topoverlay {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease-in-out;
+}
+.miniproject:hover .topoverlay {
+  height: 50%;
+  margin: 10;
+}
+.demobutton {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  width: "200px";
+}
+.miniproject:hover .demobutton {
+  opacity: 1;
+}
+.projectitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
+}
