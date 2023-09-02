@@ -88,6 +88,7 @@ const RightNavDrawer = () => {
             >
               {navDrawerMenu.map((menu) => (
                 <motion.div
+                  key={menu.title}
                   initial={{ y: 100, opacity: 0.2 }}
                   whileInView={{
                     y: 0,
@@ -103,7 +104,7 @@ const RightNavDrawer = () => {
                     scale: 1.1,
                   }}
                 >
-                  <ListItem key={menu.title} disablePadding>
+                  <ListItem disablePadding>
                     <AnchorLink
                       style={{
                         textDecoration: "none",

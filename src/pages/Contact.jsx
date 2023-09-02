@@ -22,7 +22,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-let name, phone, email, message;
 const Contact = () => {
   // snackbar
   const [open, setOpen] = useState(false);
@@ -45,7 +44,9 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const canSend = [name, phone, email, message].every(Boolean);
+  const canSend = [form.name, form.phone, form.email, form.message].every(
+    Boolean
+  );
 
   const [isSending, setIsSending] = useState(false);
 
@@ -62,6 +63,7 @@ const Contact = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     setIsSending(true);
+
     emailjs
       .send(
         process.env.REACT_APP_SERVICE_ID,
@@ -231,6 +233,7 @@ const Contact = () => {
             >
               <FormControl fullWidth>
                 <input
+                  required
                   placeholder="Your Name"
                   name="name"
                   value={form.name}
@@ -249,6 +252,7 @@ const Contact = () => {
               </FormControl>
               <FormControl fullWidth>
                 <input
+                  required
                   placeholder="Your Email"
                   name="email"
                   value={form.email}
@@ -268,6 +272,8 @@ const Contact = () => {
               <FormControl fullWidth>
                 {" "}
                 <input
+                  required
+                  type="number"
                   placeholder="Phone Number"
                   name="phone"
                   value={form.phone}
@@ -286,6 +292,7 @@ const Contact = () => {
               </FormControl>
               <FormControl fullWidth>
                 <textarea
+                  required
                   placeholder="Your Message"
                   name="message"
                   value={form.message}
@@ -306,7 +313,6 @@ const Contact = () => {
               </FormControl>
             </Box>
             <Button
-              disabled={canSend}
               type="submit"
               variant="contained"
               sx={{

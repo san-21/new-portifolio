@@ -41,6 +41,8 @@ const RightNav = () => {
               }}
             />
           )}
+        </Tooltip>
+        <Tooltip title="Home" arrow placement="left">
           {selectedPage !== "home" && (
             <HomeOutlinedIcon
               fontSize="small"
@@ -66,6 +68,8 @@ const RightNav = () => {
               color={`${theme.palette.primary[500]}`}
             />
           )}
+        </Tooltip>
+        <Tooltip title="About" arrow placement="left">
           {selectedPage !== "about" && (
             <FontAwesomeIcon
               icon={faUser}
@@ -106,6 +110,8 @@ const RightNav = () => {
               color={`${theme.palette.primary[500]}`}
             />
           )}
+        </Tooltip>
+        <Tooltip title="Projects" arrow placement="left">
           {selectedPage !== "projects" && (
             <FontAwesomeIcon
               icon={faCreditCard}
@@ -126,6 +132,8 @@ const RightNav = () => {
               color={`${theme.palette.primary[500]}`}
             />
           )}
+        </Tooltip>
+        <Tooltip title="Contact" arrow placement="left">
           {selectedPage !== "contact" && (
             <FontAwesomeIcon
               icon={faEnvelope}
