@@ -63,7 +63,7 @@ export const socialIcons = [
   {
     title: "github",
     icon: faGithub,
-    link: "https://github.com/san-software21",
+    link: "https://github.com/san-21",
   },
   {
     title: "linkedin",
