@@ -22,6 +22,7 @@ import { projectData, smallProjects } from "../assets/data/projectsData";
 
 import { GitHub, ViewInArOutlined } from "@mui/icons-material";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const Projects = () => {
   const theme = useTheme();
   return (
@@ -153,7 +154,7 @@ const Projects = () => {
                 width: { xs: "99%", sm: "99%", md: "99%", lg: "90%" },
                 height: "360px",
                 borderRadius: "25px",
-                backgroundColor: `${theme.palette.background[350]}`,
+                backgroundColor: `${theme.palette.white[350]}`,
               }}
             >
               <img
@@ -171,8 +172,9 @@ const Projects = () => {
               <Box
                 sx={{
                   position: "absolute",
-                  bottom: 0,
-                  left: 0,
+                  bottom: " 3%",
+                  left: "5%",
+                  right: "5%",
 
                   borderRadius: "25px",
                   display: "flex",
@@ -182,6 +184,9 @@ const Projects = () => {
                 }}
               >
                 <Button
+                  LinkComponent={Link}
+                  to={project.demolink}
+                  target="_blank"
                   sx={{
                     fontWeight: "italic 700",
                     textAlign: "center",
@@ -206,6 +211,9 @@ const Projects = () => {
                   }
                 />
                 <Button
+                  LinkComponent={Link}
+                  to={project.demolink}
+                  target="_blank"
                   sx={{
                     fontWeight: "italic 700",
                     width: "120px",
@@ -264,13 +272,13 @@ const Projects = () => {
         <Box
           sx={{
             width: { xs: "100%", sm: "99%", md: "99%", lg: "90%" },
+            rowGap: { xs: 11, sm: 6, md: 6, lg: 6 },
           }}
           mt={7}
           display="grid"
           gridTemplateColumns="repeat(12,1fr)"
           gridTemplateRows="repeat(4,100px)"
           columnGap={2}
-          rowGap={6}
         >
           {smallProjects.map((miniproject) => (
             <Box
@@ -290,45 +298,26 @@ const Projects = () => {
                   md: "span 4",
                   lg: "span 4",
                 },
+                textALign: "center",
               }}
             >
               <Paper
                 sx={{
-                  height: { xs: "360px", sm: "99%", md: "99%", lg: "99%" },
-                  p: 1,
+                  backgroundColor: `${theme.palette.white[100]}`,
+                  height: { xs: "450px", sm: "99%", md: "99%", lg: "99%" },
+                  p: 2,
                   borderRadius: "30px",
                   textAlign: "center",
                 }}
               >
-                <Paper
-                  className="projectitle"
-                  sx={{
-                    // p: 1,
-                    mb: 4,
-                    borderRadius: "30px 30px 0 0",
-                    // opacity: 0.6,
-                    border: `1px solid ${theme.palette.white[500]}`,
-                    color: `${theme.palette.text[500]}`,
-                    backgroundColor: `${theme.palette.white[500]}`,
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      fontWeight: "italic",
-                    }}
-                  >
-                    {miniproject.title}
-                  </Typography>
-                </Paper>
-
                 <img
                   style={{
                     width: "97%",
                     height: "94%",
                     objectFit: "cover",
                     borderRadius: "30px",
-                    boxShadow: 2,
+                    marginTop: "15px",
+                    border: `1px solid ${theme.palette.text[200]}`,
                   }}
                   src={miniproject.img}
                   alt={miniproject.title}
@@ -350,26 +339,82 @@ const Projects = () => {
                     opacity: 0.2,
                   }}
                 ></Box>
-                <Button
+
+                <Box
                   className="demobutton"
-                  variant="contained"
                   sx={{
-                    borderRadius: "30px",
-                    fontWeight: 600,
-                    width: "200px",
-                    height: "40px",
-                    backgroundColor: `${theme.palette.primary[500]}`,
-                    color: `${theme.palette.text[500]}`,
-                    "&:hover": {
-                      border: `1px solid ${theme.palette.primary[500]}`,
-                      color: `${theme.palette.primary[500]}`,
-                      backgroundColor: "transparent",
-                    },
+                    borderRadius: "25px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    p: 3,
                   }}
                 >
-                  View Demo
-                </Button>
+                  <Button
+                    LinkComponent={Link}
+                    to={miniproject.githublink}
+                    target="_blank"
+                    sx={{
+                      fontWeight: "italic 700",
+                      textAlign: "center",
+                      width: "120px",
+                      height: "40px",
+                      mr: 3,
+                      backgroundColor: `${theme.palette.primary[100]}`,
+                      borderRadius: "30px",
+                      "&:hover": {
+                        backgroundColor: `${theme.palette.primary[500]}`,
+                        color: `${theme.palette.text[500]}`,
+                      },
+                    }}
+                    variant="outlined"
+                    startIcon={
+                      <GitHub
+                        sx={{
+                          ml: 1,
+                          color: `${theme.palette.text[500]}`,
+                        }}
+                      />
+                    }
+                  />
+                  <Button
+                    LinkComponent={Link}
+                    to={miniproject.demolink}
+                    target="_blank"
+                    sx={{
+                      fontWeight: "italic 700",
+                      width: "120px",
+                      height: "40px",
+
+                      textTransform: "capitalize",
+                      color: `${theme.palette.text[500]}`,
+                      backgroundColor: `${theme.palette.primary[100]}`,
+                      borderRadius: "30px",
+                      "&:hover": {
+                        backgroundColor: `${theme.palette.primary[500]}`,
+                        color: `${theme.palette.text[500]}`,
+                      },
+                    }}
+                    variant="outlined"
+                  >
+                    Demo
+                  </Button>
+                </Box>
               </Paper>
+
+              <Typography
+                variant="h5"
+                sx={{
+                  ml: 12,
+                  mt: 2,
+                  // p: 3,
+
+                  color: `${theme.palette.text[100]}`,
+                  fontWeight: "italic",
+                }}
+              >
+                {miniproject.title}
+              </Typography>
             </Box>
           ))}
         </Box>

@@ -94,9 +94,9 @@ body {
 }
 .demobutton {
   position: absolute;
-  bottom: 50%;
-  left: 0;
-  right: 0;
+  bottom: 37%;
+  left: 10%;
+  right: 10%;
   opacity: 0;
   transition: 0.5s ease;
   width: "200px";

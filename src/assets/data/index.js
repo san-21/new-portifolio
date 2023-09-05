@@ -63,22 +63,22 @@ export const socialIcons = [
   {
     title: "github",
     icon: faGithub,
-    link: "https://www.github.com",
+    link: "https://github.com/san-software21",
   },
   {
     title: "linkedin",
     icon: faLinkedinIn,
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/in/melketsedek-cheru-539a101aa/",
   },
   {
     title: "instagram",
     icon: faInstagram,
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/melketsedekcheru21/",
   },
   {
     title: "x",
     icon: faXTwitter,
-    link: "https://www.x.com",
+    link: "https://twitter.com/Melketsedek21",
   },
 ];
 

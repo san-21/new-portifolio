@@ -150,10 +150,10 @@ const MainWrapper = () => {
               xl: "4 / 13",
             },
             gridRow: {
-              xs: "span 18",
-              sm: "span 15",
-              md: "span 15",
-              lg: "span 15",
+              xs: "span 20",
+              sm: "span 16",
+              md: "span 16",
+              lg: "span 16",
             },
             backgroundColor: `${theme.palette.background[500]}`,
           }}
