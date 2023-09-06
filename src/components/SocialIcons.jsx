@@ -35,7 +35,7 @@ const SocialIcons = ({ from }) => {
                 m: 0.8,
               }}
             >
-              <a className="fa-xs" href={social.link}>
+              <a className="fa-xs" href={social.link} target="_blank">
                 <FontAwesomeIcon
                   icon={social.icon}
                   color={`${theme.palette.background[200]}`}
@@ -57,7 +57,12 @@ const SocialIcons = ({ from }) => {
           }}
         >
           {socialIcons.map((social) => (
-            <a key={social.title} className="fa-sm" href={social.link}>
+            <a
+              key={social.title}
+              className="fa-sm"
+              href={social.link}
+              target="_blank"
+            >
               <FontAwesomeIcon
                 className="drawersocialicon"
                 icon={social.icon}

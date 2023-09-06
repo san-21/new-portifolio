@@ -10,8 +10,8 @@ export const projectData = [
   {
     id: 1,
     title: "Full Stack Admin Dashboard",
-    githublink: "#",
-    demolink: "#",
+    githublink: "https://github.com/san-21?tab=repositories",
+    demolink: "https://sanshop.onrender.com/",
     img: sanadmin,
     status: "Done for Now",
   },
