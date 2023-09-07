@@ -7,6 +7,7 @@ import myphotosmall from "../assets/images/myphotosmall.jpg";
 import myphoto from "../assets/images/myphoto.JPG";
 import SocialIcons from "./SocialIcons";
 import ProgressiveImage from "react-progressive-graceful-image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const LeftBox = () => {
   const theme = useTheme();
   return (
@@ -96,15 +97,15 @@ const LeftBox = () => {
         >
           <Typography
             sx={{
-              fontSize: "20px",
+              fontSize: "18px",
               mb: 1,
             }}
           >
-            melketsedekcheru@gmail.com
+            cherumelketsedek21@gmail.com
           </Typography>
           <Typography
             sx={{
-              fontSize: "20px",
+              fontSize: "18px",
               textAlign: "center",
             }}
           >
@@ -125,22 +126,24 @@ const LeftBox = () => {
         {/* Social Account buttons */}
         <SocialIcons from="leftbox" />
       </Box>
-      <Button
-        size="large"
-        fullWidth
-        variant="contained"
-        startIcon={<MailOutlineIcon />}
-        sx={{
-          borderRadius: "20px",
-          "&:hover": {
-            border: `1px solid ${theme.palette.primary[500]}`,
-            backgroundColor: `${theme.palette.background[500]}`,
-            color: `${theme.palette.primary[500]}`,
-          },
-        }}
-      >
-        Contact Me
-      </Button>
+      <AnchorLink href="#contact">
+        <Button
+          size="large"
+          fullWidth
+          variant="contained"
+          startIcon={<MailOutlineIcon />}
+          sx={{
+            borderRadius: "20px",
+            "&:hover": {
+              border: `1px solid ${theme.palette.primary[500]}`,
+              backgroundColor: `${theme.palette.background[500]}`,
+              color: `${theme.palette.primary[500]}`,
+            },
+          }}
+        >
+          Contact Me
+        </Button>
+      </AnchorLink>
     </Box>
   );
 };

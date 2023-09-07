@@ -16,6 +16,7 @@ const diplomaBack =
   "https://res.cloudinary.com/djznkldpb/image/upload/v1693663124/samples/myCertificates/Diploma_back_xdwk71.jpg";
 const websitedev =
   "https://res.cloudinary.com/djznkldpb/image/upload/v1693663126/samples/myCertificates/WebsiteDev_qn6t9c.jpg";
+
 export const docs = [
   {
     image: diplomaFront,

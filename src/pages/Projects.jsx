@@ -185,7 +185,7 @@ const Projects = () => {
               >
                 <Button
                   LinkComponent={Link}
-                  to={project.demolink}
+                  to={project.githublink}
                   target="_blank"
                   sx={{
                     fontWeight: "italic 700",

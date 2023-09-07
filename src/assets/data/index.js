@@ -7,6 +7,8 @@ import node from "../images/skills/nodejs.png";
 import mui from "../images/skills/mui.png";
 import github from "../images/skills/github.png";
 import devops from "../images/skills/devops.png";
+import figma from "../images/skills/figma.png";
+
 import {
   faXTwitter,
   faLinkedinIn,
@@ -63,7 +65,7 @@ export const socialIcons = [
   {
     title: "github",
     icon: faGithub,
-    link: "https://github.com/san-21",
+    link: "https://github.com/san-21?tab=repositories",
   },
   {
     title: "linkedin",
@@ -90,12 +92,12 @@ export const skillsData = [
   },
   {
     title: "React",
-    percentage: "86",
+    percentage: "80",
     icon: reactIcon,
   },
   {
     title: "Node",
-    percentage: "85",
+    percentage: "80",
     icon: node,
   },
   {
@@ -105,17 +107,22 @@ export const skillsData = [
   },
   {
     title: "Material UI",
-    percentage: "80",
+    percentage: "84",
     icon: mui,
   },
   {
     title: "Git & Github",
-    percentage: "70",
+    percentage: "60",
     icon: github,
   },
   {
-    title: "DevOPs",
-    percentage: "30",
+    title: "Figma",
+    percentage: "60",
+    icon: figma,
+  },
+  {
+    title: "DevOps",
+    percentage: "18",
     icon: devops,
   },
 ];

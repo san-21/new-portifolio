@@ -103,14 +103,14 @@ const Home = () => {
             >
               <Typewriter
                 cursor
-                words={["MERN", "Fullstack"]}
+                words={["MERN Stack", "Full Stack"]}
                 loop={0}
                 typeSpeed={100}
                 deleteSpeed={50}
                 delaySpeed={2000}
               />
             </span>{" "}
-            Stack Developer
+            Developer
           </Typography>
         </Box>
 
