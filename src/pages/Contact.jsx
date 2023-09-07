@@ -73,7 +73,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Melketsedek Cheru",
           from_email: form.email,
-          to_email: "cherumelketsedek@gmail.com",
+          to_email: "hello@melketsedekcheru.com",
           phone: form.phone,
           message: form.message,
         },
@@ -216,7 +216,7 @@ const Contact = () => {
                 fontWeight: 600,
               }}
             >
-              cherumelketsedek@gmail.com
+              hello@melketsedekcheru.com
             </Typography>
           </Box>
           {/* form started */}

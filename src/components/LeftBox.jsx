@@ -36,7 +36,7 @@ const LeftBox = () => {
             fontWeight: 600,
           }}
         >
-          Melketsedeke
+          Melketsedek
         </Typography>
         <Box
           sx={{
@@ -101,7 +101,7 @@ const LeftBox = () => {
               mb: 1,
             }}
           >
-            cherumelketsedek21@gmail.com
+            hello@melketsedekcheru.com
           </Typography>
           <Typography
             sx={{
