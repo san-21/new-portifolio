@@ -36,7 +36,7 @@ const LeftBox = () => {
             fontWeight: 600,
           }}
         >
-          Melketsedek
+          Melketsedeke
         </Typography>
         <Box
           sx={{
