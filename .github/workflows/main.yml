@@ -18,4 +18,4 @@ jobs:
         server: ftp.melketsedekcheru.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /melketsedekcheru.com/
+        server-dir: /https://www.melketsedekcheru.com/
