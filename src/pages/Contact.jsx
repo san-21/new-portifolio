@@ -163,7 +163,7 @@ const Contact = () => {
               fontWeight: 600,
             }}
           >
-            Hire Me.
+            Contact Me.
           </Typography>
           <Box
             sx={{
