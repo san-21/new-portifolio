@@ -6,22 +6,24 @@ const oldportifolio =
   "https://res.cloudinary.com/djznkldpb/image/upload/v1693664411/samples/portifolio-images/oldportifolio_n7a2kb.jpg";
 const nsrcategory =
   "https://res.cloudinary.com/djznkldpb/image/upload/v1693838356/samples/portifolio-images/nsrcategory_yww6y6.jpg";
+import mernjwt from "../images/project/merjwt.jpg";
+
 export const projectData = [
   {
     id: 1,
+    title: "MERN Stack Authentication With JWT(Advanced)",
+    githublink: "https://github.com/san-21/MERN-Jwt-Authentication",
+    demolink: "https://mernjwt-ui.onrender.com/",
+    img: mernjwt,
+    status: "Done for Now",
+  },
+  {
+    id: 2,
     title: "Full Stack Admin Dashboard",
     githublink: "https://github.com/san-21/MERN-sanshop",
     demolink: "https://sanshop.onrender.com/",
     img: sanadmin,
     status: "Done for Now",
-  },
-  {
-    id: 2,
-    title: "Full Stack Sales Dashboard",
-    githublink: "#",
-    demolink: "#",
-    img: "https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?size=626&ext=jpg&ga=GA1.1.687930671.1692227141&semt=ais",
-    status: "Comming Soon",
   },
 ];
 export const smallProjects = [

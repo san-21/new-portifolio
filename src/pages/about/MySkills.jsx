@@ -24,6 +24,68 @@ const MySkills = () => {
               justifyContent: "start",
             }}
           >
+            {/* right box */}
+            <Box
+              sx={{
+                flexGrow: 1,
+              }}
+            >
+              <motion.div
+                initial={{ x: 50, opacity: 0.4 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    type: "spring",
+                    bounce: 0.2,
+                    duration: 2,
+                  },
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    color: `${theme.palette.text[100]}`,
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                    }}
+                  >
+                    {skill.title}
+                  </Typography>
+                  {/* <Typography
+                    sx={{
+                      fontSize: "15px",
+                    }}
+                  >
+                    {skill.percentage}%
+                  </Typography> */}
+                </Box>
+                <Box
+                  sx={{
+                    mt: 1,
+                    mb: 2,
+                    width: "100%",
+                    height: "5px",
+                    backgroundColor: `${theme.palette.white[500]}`,
+                    borderRadius: "10px",
+                  }}
+                >
+                  <div
+                    className="skills"
+                    style={{
+                      // backgroundColor: `${theme.palette.primary[500]}`,
+                      width: `${skill.percentage}%`,
+                      height: "5px",
+                    }}
+                  ></div>
+                </Box>
+              </motion.div>
+            </Box>
             {/* left box icon box  */}
             <motion.div
               initial={{ y: 100, opacity: 0.4 }}
@@ -68,69 +130,6 @@ const MySkills = () => {
                 </Avatar>
               </Box>
             </motion.div>
-
-            {/* right box */}
-            <Box
-              sx={{
-                flexGrow: 1,
-              }}
-            >
-              <motion.div
-                initial={{ x: 50, opacity: 0.4 }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    type: "spring",
-                    bounce: 0.2,
-                    duration: 2,
-                  },
-                }}
-              >
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    color: `${theme.palette.text[100]}`,
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      fontSize: "15px",
-                    }}
-                  >
-                    {skill.title}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: "15px",
-                    }}
-                  >
-                    {skill.percentage}%
-                  </Typography>
-                </Box>
-                <Box
-                  sx={{
-                    mt: 1,
-                    mb: 2,
-                    width: "100%",
-                    height: "5px",
-                    backgroundColor: `${theme.palette.white[500]}`,
-                    borderRadius: "10px",
-                  }}
-                >
-                  <div
-                    className="skills"
-                    style={{
-                      // backgroundColor: `${theme.palette.primary[500]}`,
-                      width: `${skill.percentage}%`,
-                      height: "5px",
-                    }}
-                  ></div>
-                </Box>
-              </motion.div>
-            </Box>
           </Box>
         ))}
       </Box>

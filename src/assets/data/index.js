@@ -8,7 +8,7 @@ import mui from "../images/skills/mui.png";
 import github from "../images/skills/github.png";
 import devops from "../images/skills/devops.png";
 import figma from "../images/skills/figma.png";
-
+import html from "../images/skills/html.png";
 import {
   faXTwitter,
   faLinkedinIn,
@@ -86,44 +86,44 @@ export const socialIcons = [
 
 export const skillsData = [
   {
+    title: "HTML & CSS",
+    percentage: "100",
+    icon: html,
+  },
+  {
     title: "JavaScript",
-    percentage: "70",
+    percentage: "100",
     icon: js,
   },
   {
     title: "React",
-    percentage: "80",
+    percentage: "100",
     icon: reactIcon,
   },
   {
     title: "Node",
-    percentage: "80",
+    percentage: "100",
     icon: node,
   },
   {
     title: "MongoDb",
-    percentage: "80",
+    percentage: "100",
     icon: mongo,
   },
   {
     title: "Material UI",
-    percentage: "84",
+    percentage: "100",
     icon: mui,
   },
   {
     title: "Git & Github",
-    percentage: "60",
+    percentage: "100",
     icon: github,
   },
   {
     title: "Figma",
-    percentage: "60",
+    percentage: "100",
     icon: figma,
-  },
-  {
-    title: "DevOps",
-    percentage: "18",
-    icon: devops,
   },
 ];
 
