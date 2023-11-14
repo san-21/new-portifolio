@@ -120,8 +120,11 @@ const Home = () => {
             color: `${theme.palette.text[200]}`,
           }}
         >
-          I design beautifull and responsive user interface, and fully implement
-          and integrate Backend and Database for the web.
+          Passionate full-stack developer with a BSc in Software Engineering and
+          MERN stack certification. Proven track record in crafting seamless
+          user interfaces and robust back-end solutions. Eager to bring
+          technical expertise, creativity, and a commitment to excellence to
+          your team.
         </Typography>
       </motion.div>
     </Box>

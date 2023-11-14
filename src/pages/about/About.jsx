@@ -1,5 +1,5 @@
 import { Box, Button, Toolbar, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
@@ -45,10 +45,14 @@ function a11yProps(index) {
 
 const About = () => {
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
-
+  const [value, setValue] = useState(0);
+  const [readMore, setReadMore] = useState(false);
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const handleReadMore = () => {
+    setReadMore((read) => !read);
   };
   return (
     <Box
@@ -114,9 +118,43 @@ const About = () => {
               color: `${theme.palette.text[200]}`,
             }}
           >
-            Story began long time ago.my goal and interest is being creative
-            software developer. Design and Develop is my Passion.
+            Greetings! I am a highly motivated and detail-oriented software
+            engineer with a Bachelor's degree in Software Engineering and a
+            recent certification in MERN stack development. My journey in the
+            realm of web development has been an exciting adventure, marked by a
+            relentless pursuit of knowledge and a passion for crafting seamless
+            user experiences. With a solid foundation in both front-end and
+            back-end development, I thrive in creating interactive and
+            responsive user interfaces that leave a lasting impression.
+            <Button
+              onClick={handleReadMore}
+              sx={{
+                textTransform: "capitalize",
+              }}
+            >
+              {readMore ? "Hide Detail" : " Read More"}
+            </Button>
           </Typography>
+          {readMore && (
+            <Typography
+              sx={{
+                width: { lg: "80%" },
+
+                mt: 6,
+
+                color: `${theme.palette.text[200]}`,
+              }}
+            >
+              As of July 2023, I've embarked on a freelancing journey, armed
+              with a profound commitment to delivering top-notch solutions. I'm
+              ready to take on any web development challenge, bringing a unique
+              blend of innovation, adaptability, and a keen eye for detail.
+              Let's collaborate to turn your vision into a digital reality –
+              because in the world of web development, possibilities are
+              limitless, and I'm here to make them tangible.
+            </Typography>
+          )}
+
           {/* tab container */}
         </motion.div>
       </AnimatePresence>
